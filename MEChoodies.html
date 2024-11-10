@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASKED EMOJI CLOTHING - hoodies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .navbar a[href="MEChoodies.html"] {
+        background-color: yellow;
+         color: black; /* Change text color for better contrast */
+         }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-item {
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            cursor: pointer;
+            max-width: 300px;
+            max-height: 200px;
+        }
+        .product-name {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #555;
+        }
+        .logo img {
+            width: 100%;
+            cursor: pointer;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Title -->
+    <div class="logo">MASKED EMOJI CLOTHING
+    <img src="logo.png" alt="Toxic Tee"></div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+     <div>
+        <a href="#home">Home</a>
+        <a href="MECshirts.html">Shirts</a>
+        <a href="MEChoodies.html">Hoodies</a>
+        <a href="#sp">Sweatpants</a>
+        <a href="#ss">Sweatsuits</a>
+        <a href="#cs">coming soon</a>
+        <a href="#ld">logos and designs</a>
+        <a href="#contact">Contact us</a>
+    </div>
+      <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterProducts()">
+        </div>
+  </div>
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-item">
+            <img src="RR2.jpg" alt="Product 1" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color: RED, Logo(RED,WHITE)')">
+            <div class="product-name"> Ragin'RED</div>
+            <div class="product-price">$35.00</div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item">
+            <img src="FB2.jpg" alt="Product 2" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color: Royal Blue, Logo(BLUE,WHITE)')">
+            <div class="product-name">Feeling BLUE?</div>
+            <div class="product-price">$35.00</div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item">
+            <img src="Placehold.jpg" alt="Product 3" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color:Pink, Logo(pale-yellow,red,rose-brown)')">
+            <div class="product-name">green with envy</div>
+            <div class="product-price">$35.00</div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item">
+            <img src="PP.jpg" alt="Product 4" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color:Black, Logo(Yellow,Red,Brown)')">
+            <div class="product-name">Purple Pride</div>
+            <div class="product-price">$35.00</div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-item">
+            <img src="lillogo.png" alt="Product 5" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color:Black, Logo(Yellow,Red,Brown)')">
+            <div class="product-name">MEC Black Tee(pocket logo)</div>
+            <div class="product-price">$16.00</div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-item">
+            <img src="tanlongsleeve.jpg" alt="Product 6" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color:Sand, Logo(Sand,dark-tan)')">
+            <div class="product-name">SANDY Long Sleeve</div>
+            <div class="product-price">$25.00</div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-item">
+            <img src="pnkls.jpg" alt="Product 7" onclick="showPopup('50/50 cotton poly mix', 'Unixsex Fit Color:Black, Logo(Pink,white)')">
+            <div class="product-name">PINK LOGO Long Sleeve</div>
+            <div class="product-price">$25.00</div>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-item">
+            <img src="tto.jpg" alt="Product 8" onclick="showPopup('Product 8', '$49.99')">
+            <div class="product-name">"THIS THE ONE" Long Sleeve</div>
+            <div class="product-price">$25.00</div>
+        </div>
+        <!-- Product 9 -->
+    
+
+    <!-- JavaScript for Popup Message -->
+    <script>
+        function showPopup(name, price) {
+            alert(name + " - " + price);
+        }
+    </script>
+
+</body>
+</html>
